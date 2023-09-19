@@ -192,3 +192,15 @@ body {
         content: none;
     }
 }
+
+@media(max-width:766px) {
+    .container {
+        width: 95%;
+    }
+
+    .main_img {
+        height: auto;
+    }
+}
+
+@media(max-width:)
