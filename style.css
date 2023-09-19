@@ -108,6 +108,10 @@ body {
     border: none;
 }
 
+.share img {
+    color: #48556a;
+}
+
 .share_widget {
     position: absolute;
     z-index: 1;
@@ -139,12 +143,20 @@ body {
     margin-right: 20px;
     color: #9daec2;
     letter-spacing: 0.3125em;
+    user-select: none;
 }
 
 .share_widget img {
     margin-inline: 7px;
+    user-select: none;
+    cursor: pointer;
 }
 
 .hidden {
     display: none;
+}
+
+.active {
+    background-color: #48556a;
+    color: #fff;
 }
