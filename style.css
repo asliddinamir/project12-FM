@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     background-color: #fff;
     height: auto;
@@ -40,8 +40,7 @@ body {
 .main_img {
     width: 285px;
     height: 280px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 10px 0 0 10px;
 }
 
 .info {
@@ -71,6 +70,10 @@ body {
     justify-content: space-between;
 }
 
+.user_info_and_image {
+    display: flex;
+}
+
 .avatar_img {
     width: 40px;
     border-radius: 50%;
@@ -79,7 +82,7 @@ body {
 .user_info {
     display: flex;
     flex-direction: column;
-    margin-right: 9rem;
+    margin-left: 1rem;
 }
 
 .user_info span {
@@ -162,6 +165,8 @@ body {
 
 .attribution {
     color: #111;
+    text-align: center;
+    font-size: 10px;
 }
 
 .attribution a {
@@ -184,7 +189,7 @@ body {
         left: 0;
         width: 100%;
         border-radius: 0;
-        border-bottom-right-radius: 15px;
+        border-bottom-right-radius: 10px;
         padding-block: 25px;
     }
 
@@ -203,4 +208,32 @@ body {
     }
 }
 
-@media(max-width:)
+@media(max-width:700px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .main_img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .share {
+        bottom: 7%;
+    }
+
+    .share_widget {
+        border-radius: 0 0 10px 10px;
+    }
+}
