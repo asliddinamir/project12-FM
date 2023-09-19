@@ -160,3 +160,11 @@ body {
     background-color: #48556a;
     color: #fff;
 }
+
+.attribution {
+    color: #111;
+}
+
+.attribution a {
+    color: red;
+}
